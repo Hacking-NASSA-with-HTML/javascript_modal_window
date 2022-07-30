@@ -27,16 +27,19 @@ function _createModal(options) {
 $.modal = function (options) {
     const CLOSE_ANIMATION_SPEED = 2000
     const $modal = _createModal(options)
+    let closing = false
 
     return {
         open() {
-            $modal.classList.add('opennn')
+            !closing && $modal.classList.add('opennn')
         },
         close() {
+            closing = true
             $modal.classList.remove('opennn')
             $modal.classList.add('hide')
             setTimeout(() => {
                 $modal.classList.remove('hide')
+                closing = false
             }, CLOSE_ANIMATION_SPEED)
         },
         destroy() { }
