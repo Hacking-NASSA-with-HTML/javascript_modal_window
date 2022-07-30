@@ -29,10 +29,10 @@ $.modal = function (options) {
 
     return {
         open() {
-            $modal.classList.add('open')
+            $modal.classList.add('opennn')
         },
         close() {
-            $modal.classList.remove('open')
+            $modal.classList.remove('opennn')
         },
         destroy() { }
     }

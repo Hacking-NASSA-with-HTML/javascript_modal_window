@@ -10,10 +10,18 @@ body {
 
 .modalWrapper {}
 
-.modalWrapper.open .modalBackground,
-.modalWrapper.open .modalWindow {
+.modalWrapper.opennn .modalBackground,
+.modalWrapper.opennn .modalWindow {
     opacity: 1;
     z-index: 200;
+}
+
+.modalWrapper.opennn .modalBackground {
+    background: rgba(0, 0, 0, .5);
+}
+
+.modalWrapper.opennn .modalWindow {
+    transform: translateY(100px);
 }
 
 .modalWindow,
@@ -28,15 +36,17 @@ body {
     right: 0;
     left: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, .5);
+    background: rgba(0, 0, 0, 0);
+    transition: background 2s ease-in;
 }
 
 .modalWindow {
     width: 300px;
     border-radius: 5px;
     background: #fff;
-    margin: 100px auto;
-    /* height: 200px; */
+    margin: 0 auto;
+    transform: translateY(-200px);
+    transition: transform 2s ease-in;
 }
 
 .modalHeader {
