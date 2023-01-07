@@ -10,16 +10,12 @@ function createModal(options) {
         <div class="modalBackground">
             <div class="modalWindow">
                 <div class="modalHeader">
-                    <span class="modalTitle">Modal title</span>
+                    <span class="modalTitle">Choose the Music</span>
                     <span class="modalClose">X</span>
                 </div>
                 <div class="modalContent">
-                    <p>Click X near Modal title</p>
-                    <p>To Close Modal Window</p>
-                </div>
-                <div class="modalFooter">
-                    <button>OK</button>
-                    <button>Cancel</button>
+                    <p class="Joyful">Joyful Music</p>
+                    <p class="Mystical">Mystical Music</p>
                 </div>
             </div>
         </div>
