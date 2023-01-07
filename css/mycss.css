@@ -78,6 +78,12 @@ body {
     cursor: pointer;
 }
 
+.modalClose:hover {
+    color: red;
+    transform: scale(1.5);
+    transition: .3s ease;
+}
+
 .modalContent {
     padding: 10px;
 }

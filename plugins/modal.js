@@ -11,10 +11,10 @@ function createModal(options) {
             <div class="modalWindow">
                 <div class="modalHeader">
                     <span class="modalTitle">Modal title</span>
-                    <span class="modalClose">&times;</span>
+                    <span class="modalClose">X</span>
                 </div>
                 <div class="modalContent">
-                    <p>Click &times; near Modal title</p>
+                    <p>Click X near Modal title</p>
                     <p>To Close Modal Window</p>
                 </div>
                 <div class="modalFooter">
