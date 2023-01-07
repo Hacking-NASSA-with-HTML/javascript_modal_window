@@ -1,4 +1,4 @@
-function _createModal(options) {
+function createModal(options) {
     const modal = document.createElement('div')
     modal.classList.add('modalWrapper')
     modal.insertAdjacentHTML('afterbegin', `
@@ -25,7 +25,7 @@ function _createModal(options) {
 
 function modalWindow(options) {
     const CLOSE_ANIMATION_SPEED = 2000
-    const $modal = _createModal(options)
+    const $modal = createModal(options)
     let closing = false
 
     return {
