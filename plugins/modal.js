@@ -31,11 +31,11 @@ $.modal = function (options) {
 
     return {
         open() {
-            !closing && $modal.classList.add('opennn')
+            !closing && $modal.classList.add('open')
         },
         close() {
             closing = true
-            $modal.classList.remove('opennn')
+            $modal.classList.remove('open')
             $modal.classList.add('hide')
             setTimeout(() => {
                 $modal.classList.remove('hide')

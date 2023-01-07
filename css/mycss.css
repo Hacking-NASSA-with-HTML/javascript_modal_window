@@ -10,8 +10,8 @@ body {
 
 /* .modalWrapper {} */
 
-.modalWrapper.opennn .modalBackground,
-.modalWrapper.opennn .modalWindow {
+.modalWrapper.open .modalBackground,
+.modalWrapper.open .modalWindow {
     opacity: 1;
     z-index: 200;
 }
@@ -22,11 +22,11 @@ body {
     z-index: 200;
 }
 
-.modalWrapper.opennn .modalBackground {
+.modalWrapper.open .modalBackground {
     background: rgba(0, 0, 0, .5);
 }
 
-.modalWrapper.opennn .modalWindow {
+.modalWrapper.open .modalWindow {
     transform: translateY(100px);
 }
 
