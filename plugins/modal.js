@@ -1,7 +1,7 @@
-function createModal(options) {
-    const modal = document.createElement('div')
-    modal.classList.add('modalWrapper')
-    modal.insertAdjacentHTML('afterbegin', `
+function createModal() {
+    const modalDiv = document.createElement('div')
+    modalDiv.classList.add('modalWrapper')
+    modalDiv.insertAdjacentHTML('afterbegin', `
         <div class="modalBackground">
             <div class="modalWindow">
                 <div class="modalHeader">
@@ -19,25 +19,25 @@ function createModal(options) {
             </div>
         </div>
     `)
-    document.body.appendChild(modal)
-    return modal
+    document.body.appendChild(modalDiv)
+    return modalDiv
 }
 
-function modalWindow(options) {
+function modalWindow() {
     const CLOSE_ANIMATION_SPEED = 2000
-    const $modal = createModal(options)
+    // const $modal = createModal()
     let closing = false
 
     return {
         open() {
-            !closing && $modal.classList.add('open')
+            !closing && createModal().classList.add('open')
         },
         close() {
             closing = true
-            $modal.classList.remove('open')
-            $modal.classList.add('hide')
+            createModal().classList.remove('open')
+            createModal().classList.add('hide')
             setTimeout(() => {
-                $modal.classList.remove('hide')
+                createModal().classList.remove('hide')
                 closing = false
             }, CLOSE_ANIMATION_SPEED)
         },
