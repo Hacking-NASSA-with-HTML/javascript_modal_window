@@ -6,9 +6,12 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    max-width: 1024px;
 }
 
-/* .modalWrapper {} */
+.container {
+    text-align: center;
+}
 
 .modalWrapper.open .modalBackground,
 .modalWrapper.open .modalWindow {
@@ -118,7 +121,7 @@ body {
 
 .buttonWrapperDiv {
     width: 100vw;
-    height: 10vh;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -127,9 +130,11 @@ body {
 #button {
     border: 0;
     width: 70vw;
+    height: auto;
     line-height: 2.5;
-    padding: 0 20px;
-    font-size: calc(20px + (30 - 20) * ((100vw - 300px) / (1600 - 300)));
+    padding: 20px 20px;
+    margin: 40px;
+    font-size: calc(18px + (30 - 18) * ((100vw - 300px) / (1600 - 300)));
     text-align: center;
     color: #fff;
     text-shadow: 1px 1px 1px #000;
@@ -162,4 +167,18 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 40px;
+    text-align: center;
+}
+
+
+/*****************************                                          ***********/
+/*****************************        @media (max-width: 767px)         ***********/
+/*****************************                                          ***********/
+/*****************************                                          ***********/
+
+@media (max-width: 767px) {
+
+    .modalWindow {
+        width: 90vw;
+    }
 }
