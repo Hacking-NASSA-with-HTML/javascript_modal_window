@@ -1,6 +1,3 @@
-const $ = {}
-// const modal = $.modal()
-
 function _createModal(options) {
     const modal = document.createElement('div')
     modal.classList.add('modalWrapper')
