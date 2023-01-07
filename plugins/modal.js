@@ -1,4 +1,6 @@
-function createModal() {
+const button = document.getElementById('button')
+
+function createModal(options) {
     const modalDiv = document.createElement('div')
     modalDiv.classList.add('modalWrapper')
     modalDiv.insertAdjacentHTML('afterbegin', `
@@ -23,21 +25,23 @@ function createModal() {
     return modalDiv
 }
 
-function modalWindow() {
-    const CLOSE_ANIMATION_SPEED = 2000
-    // const $modal = createModal()
+// const createdModalDiv = document.querySelector('.modalWrapper')
+
+function modalWindow(options) {
+    const CLOSE_ANIMATION_SPEED = 1000
+    const someCrap = createModal(options)
     let closing = false
 
     return {
         open() {
-            !closing && createModal().classList.add('open')
+            someCrap.classList.add('open')
         },
         close() {
             closing = true
-            createModal().classList.remove('open')
-            createModal().classList.add('hide')
+            someCrap.classList.remove('open')
+            someCrap.classList.add('hide')
             setTimeout(() => {
-                createModal().classList.remove('hide')
+                someCrap.classList.remove('hide')
                 closing = false
             }, CLOSE_ANIMATION_SPEED)
         },
@@ -45,6 +49,15 @@ function modalWindow() {
     }
 }
 
+button.addEventListener('click', function () {
+    modalWindow().open()
+})
+
+// button.addEventListener('click', function () {
+//     modalWindow().open()
+// })
 
 // to open modal window put into console
 // modalWindow().open()
+// to close modal window put into console
+// modalWindow().close()
