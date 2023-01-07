@@ -1,3 +1,6 @@
+const $ = {}
+window.$ = $
+
 const button = document.getElementById('button')
 
 function createModal(options) {
@@ -11,8 +14,8 @@ function createModal(options) {
                     <span class="modalClose">&times;</span>
                 </div>
                 <div class="modalContent">
-                    <p>Lorem ipsum dolor sit.</p>
-                    <p>Lorem ipsum dolor sit.</p>
+                    <p>Click &times; near Modal title</p>
+                    <p>To Close Modal Window</p>
                 </div>
                 <div class="modalFooter">
                     <button>OK</button>
@@ -25,10 +28,8 @@ function createModal(options) {
     return modalDiv
 }
 
-// const createdModalDiv = document.querySelector('.modalWrapper')
-
-function modalWindow(options) {
-    const CLOSE_ANIMATION_SPEED = 1000
+$.modal = function (options) {
+    const CLOSE_ANIMATION_SPEED = 500
     const someCrap = createModal(options)
     let closing = false
 
@@ -49,15 +50,13 @@ function modalWindow(options) {
     }
 }
 
+const modal = $.modal()
+
 button.addEventListener('click', function () {
-    modalWindow().open()
+    modal.open()
 })
 
-// button.addEventListener('click', function () {
-//     modalWindow().open()
-// })
-
-// to open modal window put into console
-// modalWindow().open()
-// to close modal window put into console
-// modalWindow().close()
+const closeModalWindow = document.querySelector('.modalClose')
+closeModalWindow.addEventListener('click', function () {
+    modal.close()
+})
