@@ -55,10 +55,13 @@ body {
 }
 
 .modalWindow {
-    width: 300px;
+    width: 30vw;
+    height: auto;
+    border: 5px solid darkblue;
     border-radius: 5px;
     background: #fff;
     margin: 0 auto;
+    font-size: 30px;
     transform: translateY(-200px);
     transition: transform .2s ease-in;
 }
@@ -85,11 +88,24 @@ body {
 }
 
 .modalContent {
-    padding: 10px;
+    padding: 30px;
 }
 
 .modalContent p {
-    margin: 0 0 5px;
+    margin: 20px 0 20px 0;
+    text-align: center;
+}
+
+.Joyful,
+.Mystical {
+    cursor: pointer;
+}
+
+.Joyful:hover,
+.Mystical:hover {
+    color: red;
+    transform: scale(1.1);
+    transition: .3s ease;
 }
 
 .modalFooter {
@@ -98,4 +114,52 @@ body {
     align-items: center;
     padding: 5px 10px;
     border-top: 2px solid #eee;
+}
+
+.buttonWrapperDiv {
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#button {
+    border: 0;
+    width: 70vw;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: calc(20px + (30 - 20) * ((100vw - 300px) / (1600 - 300)));
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgba(220, 0, 0, 1);
+    background-image: linear-gradient(to top left,
+            rgba(0, 0, 0, .2),
+            rgba(0, 0, 0, .2) 30%,
+            rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+        inset -2px -2px 3px rgba(0, 0, 0, .6);
+    outline: none;
+    transition: .3s ease;
+    cursor: pointer;
+}
+
+#button:hover {
+    background-color: rgba(255, 0, 0, 1);
+}
+
+#button:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+        inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+
+.backgroundMusicDiv {
+    width: 100vw;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
 }
