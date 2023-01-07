@@ -1,3 +1,5 @@
+const $ = {}
+// const modal = $.modal()
 
 function _createModal(options) {
     const modal = document.createElement('div')
@@ -24,7 +26,7 @@ function _createModal(options) {
     return modal
 }
 
-$.modal = function (options) {
+function modalWindow(options) {
     const CLOSE_ANIMATION_SPEED = 2000
     const $modal = _createModal(options)
     let closing = false
@@ -45,3 +47,7 @@ $.modal = function (options) {
         destroy() { }
     }
 }
+
+
+// to open modal window put into console
+// modalWindow().open()
