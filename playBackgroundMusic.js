@@ -16,10 +16,12 @@ JoyfulMusic.addEventListener('click', () => {
         JoyfulMusicSound.volume = 0.25
         JoyfulMusicSound.play()
         joyfulBackgroundMusic = false
+        modal.close()
     } else {
-        backgroundMusicDiv.innerText = 'Music is not playing'
+        backgroundMusicDiv.innerText = 'Music is paused'
         JoyfulMusicSound.pause()
         joyfulBackgroundMusic = true
+        modal.close()
     }
 })
 
@@ -29,9 +31,21 @@ MysticalMusic.addEventListener('click', () => {
         MysticalMusicSound.volume = 0.25
         MysticalMusicSound.play()
         mysticalBackgroundMusic = false
+        modal.close()
     } else {
-        backgroundMusicDiv.innerText = 'Music is not playing'
+        backgroundMusicDiv.innerText = 'Music is paused'
         MysticalMusicSound.pause()
         mysticalBackgroundMusic = true
+        modal.close()
     }
+})
+
+JoyfulMusicSound.addEventListener('ended', () => {
+    backgroundMusicDiv.innerText = 'No Background Music'
+    joyfulBackgroundMusic = true
+})
+
+MysticalMusicSound.addEventListener('ended', () => {
+    backgroundMusicDiv.innerText = 'No Background Music'
+    mysticalBackgroundMusic = true
 })
