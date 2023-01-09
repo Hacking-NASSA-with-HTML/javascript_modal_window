@@ -6,11 +6,20 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+
+}
+
+.wrapper {
+    width: 100vw;
+    margin: 0 auto;
     max-width: 1024px;
 }
 
 .container {
+    display: flex;
+    flex-direction: column;
     text-align: center;
+    margin: 0 auto;
 }
 
 .modalWrapper.open .modalBackground,
@@ -120,7 +129,7 @@ body {
 }
 
 .buttonWrapperDiv {
-    width: 100vw;
+    /* width: 100vw; */
     height: auto;
     display: flex;
     justify-content: center;
@@ -129,7 +138,7 @@ body {
 
 #button {
     border: 0;
-    width: 70vw;
+    width: 50vw;
     height: auto;
     line-height: 2.5;
     padding: 20px 20px;
@@ -161,7 +170,7 @@ body {
 }
 
 .backgroundMusicDiv {
-    width: 100vw;
+    /* width: 100vw; */
     height: 20vh;
     display: flex;
     justify-content: center;
