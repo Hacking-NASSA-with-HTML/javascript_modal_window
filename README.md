@@ -1,1 +1,1 @@
-# javascript_modal_window
+# javascript modal window
