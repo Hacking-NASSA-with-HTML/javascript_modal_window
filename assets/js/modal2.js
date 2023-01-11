@@ -10,12 +10,9 @@ function renderModal() {
                 <div class='close-modal2'>
                     X
                 </div>
-                <div class='film-card-title'>Name</div>
-                <div class='film-card-year'>Year</div>
-                <div class='film-card-description'>Description</div>
-                <button class='film-card-button'>
-                    Some Value
-                </button>
+                <div class='title'>Name</div>
+                <div class='title'>Name</div>
+                <div class='title'>Name</div>
             </div>
         </div>
     `
