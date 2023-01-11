@@ -39,7 +39,7 @@ body {
 }
 
 .modalWrapper.open .modalWindow {
-    transform: translateY(100px);
+    transform: translateY(150px);
 }
 
 .modalWrapper.hide .modalBackground {
@@ -47,7 +47,7 @@ body {
 }
 
 .modalWrapper.hide .modalWindow {
-    transform: translateY(-200px);
+    transform: translateY(-400px);
 }
 
 .modalWindow,
@@ -74,7 +74,7 @@ body {
     background: #fff;
     margin: 0 auto;
     font-size: 30px;
-    transform: translateY(-200px);
+    transform: translateY(-400px);
     transition: transform .2s ease-in;
 }
 
