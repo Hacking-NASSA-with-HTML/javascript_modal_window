@@ -3,7 +3,7 @@ const root = document.getElementById('root')
 function mainPageContent() {
     const renderMainPageContent =
         `
-    <div class="container">
+        <div class="container">
             <h1>JavaScript Practice</h1>
             <h2>Modal Window</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
