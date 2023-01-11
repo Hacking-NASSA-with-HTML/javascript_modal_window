@@ -31,5 +31,6 @@ function handleOpenModal() {
         const modal2 = document.querySelector('.modal2')
         modal2.remove()
         // console.log('Button  is clicked')
-    }, { once: true })
+        // }, { once: true })
+    })  // you can add  }, { once: true }) to destroy module at all
 }
