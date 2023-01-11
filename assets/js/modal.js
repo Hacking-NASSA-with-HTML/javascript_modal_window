@@ -2,7 +2,7 @@ const $ = {}
 window.$ = $
 
 const button = document.getElementById('button')
-const wrapper = document.getElementById('wrapper')
+const root = document.getElementById('root')
 
 function createModal(options) {
     const modalDiv = document.createElement('div')
@@ -21,7 +21,7 @@ function createModal(options) {
             </div>
         </div>
     `)
-    wrapper.appendChild(modalDiv)
+    root.appendChild(modalDiv)
     return modalDiv
 }
 
