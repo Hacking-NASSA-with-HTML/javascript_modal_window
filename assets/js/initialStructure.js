@@ -11,8 +11,10 @@ function mainPageContent() {
             </p>
         </div>
         <div class="buttonWrapperDiv">
-            <!-- <input type="submit" id="button" value="Click To Open Modal Window To Choose Music"> -->
-            <button type="button" id="button">Click To Open Modal Window To Choose Music</button>
+            <button type="button" class="button" id="button">Click To Open Modal Window To Choose Music</button>
+        </div>
+        <div class="buttonWrapperDiv">
+            <button type="button" class="button" id="button2">Second OptionClick To Open Modal Window</button>
         </div>
         <div class="backgroundMusicDiv">No Background Music</div>
     `

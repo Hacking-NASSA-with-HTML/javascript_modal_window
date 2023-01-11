@@ -2,7 +2,6 @@ const $ = {}
 window.$ = $
 
 const button = document.getElementById('button')
-// const root = document.getElementById('root')
 
 function createModal(options) {
     const modalDiv = document.createElement('div')

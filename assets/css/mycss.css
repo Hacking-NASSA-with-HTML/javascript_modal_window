@@ -136,7 +136,7 @@ body {
     align-items: center;
 }
 
-#button {
+.button {
     border: 0;
     width: 50vw;
     height: auto;
