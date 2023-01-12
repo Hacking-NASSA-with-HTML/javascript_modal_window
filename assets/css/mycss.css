@@ -229,7 +229,6 @@ body {
 .modal2.hideModalWin .modal-content {
     opacity: 1;
     z-index: 10;
-    /* transform: translateY(-400px); */
     transform: translateY(-100%);
 }
 
