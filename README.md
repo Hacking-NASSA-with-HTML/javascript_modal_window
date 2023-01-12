@@ -12,4 +12,4 @@ please let me know.
 
 It a little bit better for now 🙂 
 
-Still there is no smooth appearing.
+Added raw working prototype.
