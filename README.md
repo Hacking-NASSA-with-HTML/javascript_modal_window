@@ -1,15 +1,16 @@
 # javascript modal window
 
-I do not like it how it works with that modal window.
+It works as was supposed now.
 
-Yes, it works, still I do not like it.
+Enjoy!
 
-Guys, if you have some interesting modal windows
+See the project on [Github Pages](https://hacking-nassa-with-html.github.io/javascript_modal_window/) .
 
-please let me know.
+please 🙌 let me know if you have found any issues ⭐
 
----
+And May Your Code Always Works Too 🍾🥂
 
-It a little bit better for now 🙂 
 
-Added raw working prototype.
+![](https://github.com/Hacking-NASSA-with-HTML/Array_iteration_cheatsheet/blob/main/star.gif)
+
+![](https://github.com/Hacking-NASSA-with-HTML/keep-alive-server/blob/main/assets/happy-happy.gif)
