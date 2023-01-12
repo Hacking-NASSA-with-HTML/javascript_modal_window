@@ -14,47 +14,6 @@ body {
     max-width: 1024px;
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin: 0 auto;
-}
-
-.modalWrapper.open .modalBackground,
-.modalWrapper.open .modalWindow {
-    opacity: 1;
-    z-index: 10;
-}
-
-.modalWrapper.hide .modalBackground,
-.modalWrapper.hide .modalWindow {
-    opacity: 1;
-    z-index: 10;
-}
-
-.modalWrapper.open .modalBackground {
-    background: rgba(0, 0, 0, .5);
-}
-
-.modalWrapper.open .modalWindow {
-    transform: translateY(200px);
-}
-
-.modalWrapper.hide .modalBackground {
-    background: rgba(0, 0, 0, 0);
-}
-
-.modalWrapper.hide .modalWindow {
-    transform: translateY(-400px);
-}
-
-.modalWindow,
-.modalBackground {
-    opacity: 0;
-    z-index: -1;
-}
-
 .modalBackground {
     position: fixed;
     top: 0;
@@ -63,6 +22,8 @@ body {
     bottom: 0;
     background: rgba(0, 0, 0, 0);
     transition: background .2s ease-in;
+    opacity: 0;
+    z-index: -1;
 }
 
 .modalWindow {
@@ -73,7 +34,40 @@ body {
     background: #fff;
     margin: 0 auto;
     font-size: 30px;
+    opacity: 0;
+    z-index: -1;
     transition: transform .2s ease-in;
+}
+
+.modalWrapper.open .modalBackground {
+    opacity: 1;
+    z-index: 10;
+    background: rgba(0, 0, 0, .5);
+}
+
+.modalWrapper.open .modalWindow {
+    opacity: 1;
+    z-index: 10;
+    transform: translateY(200px);
+}
+
+.modalWrapper.hide .modalBackground {
+    opacity: 1;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0);
+}
+
+.modalWrapper.hide .modalWindow {
+    opacity: 1;
+    z-index: 10;
+    transform: translateY(-400px);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .modalHeader {
