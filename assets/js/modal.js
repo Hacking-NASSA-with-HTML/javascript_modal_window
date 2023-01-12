@@ -41,7 +41,7 @@ $.modal = function (options) {
                 someCrap.classList.remove('hide')
                 closing = false
             }, CLOSE_ANIMATION_SPEED)
-        },
+        }
     }
 }
 
