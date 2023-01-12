@@ -235,12 +235,13 @@ body {
 .close-modal2 {
     cursor: pointer;
     font-size: 40px;
+    color: #dccdcd;
+    transition: 0.3s ease;
 }
 
 .close-modal2:hover {
     color: red;
-    transform: scale(1.5);
-    transition: .3s ease;
+    transform: scale(1.3);
 }
 
 

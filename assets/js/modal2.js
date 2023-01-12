@@ -6,13 +6,12 @@ function renderModal() {
     const renderedDivModal2 =
         `
         <div class='modal2'>
-            <div class='modal-content'>
+            <div class='modal-content'>               
+                <div class='title'>Value</div>
+                <div class='title'>Value</div>
                 <div class='close-modal2'>
-                    X
+                    close window X
                 </div>
-                <div class='title'>Name</div>
-                <div class='title'>Name</div>
-                <div class='title'>Name</div>
             </div>
         </div>
     `
