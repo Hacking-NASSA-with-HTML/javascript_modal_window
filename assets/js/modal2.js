@@ -18,15 +18,19 @@ function renderModal() {
     `
     return renderedDivModal2
 }
+root.insertAdjacentHTML("afterend", renderModal())
+
 
 function handleOpenModal() {
-    root.insertAdjacentHTML("afterend", renderModal())
+    let addToggleModalWindow = document.querySelector('.modal2')
+    addToggleModalWindow.classList.add('openModalWin')
 
     const closeModalButton = document.querySelector('.close-modal2')
     closeModalButton.addEventListener('click', () => {
-        const modal2 = document.querySelector('.modal2')
-        modal2.remove()
-        // console.log('Button  is clicked')
-        // }, { once: true })
-    })  // you can add  }, { once: true }) to destroy module at all
+        addToggleModalWindow.classList.remove('openModalWin')
+        addToggleModalWindow.classList.add('hideModalWin')
+        setTimeout(() => {
+            addToggleModalWindow.classList.remove('hideModalWin')
+        }, 300)
+    })
 }
