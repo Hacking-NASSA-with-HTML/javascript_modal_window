@@ -20,7 +20,6 @@ function renderModal() {
 }
 
 function handleOpenModal() {
-    renderModal()
     root.insertAdjacentHTML("afterend", renderModal())
 
     const closeModalButton = document.querySelector('.close-modal2')
