@@ -25,7 +25,7 @@ function createModal(options) {
 }
 
 $.modal = function (options) {
-    const CLOSE_ANIMATION_SPEED = 500
+    const CLOSE_ANIMATION_SPEED = 200
     const someCrap = createModal(options)
     let closing = false
 
@@ -42,7 +42,6 @@ $.modal = function (options) {
                 closing = false
             }, CLOSE_ANIMATION_SPEED)
         },
-        destroy() { }
     }
 }
 
