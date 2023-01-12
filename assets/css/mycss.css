@@ -6,7 +6,6 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-
 }
 
 .wrapper {
@@ -25,13 +24,13 @@ body {
 .modalWrapper.open .modalBackground,
 .modalWrapper.open .modalWindow {
     opacity: 1;
-    z-index: 200;
+    z-index: 10;
 }
 
 .modalWrapper.hide .modalBackground,
 .modalWrapper.hide .modalWindow {
     opacity: 1;
-    z-index: 200;
+    z-index: 10;
 }
 
 .modalWrapper.open .modalBackground {
@@ -40,8 +39,6 @@ body {
 
 .modalWrapper.open .modalWindow {
     transform: translateY(200px);
-    /* top: 50%; */
-    /* transform: translateY(80%); */
 }
 
 .modalWrapper.hide .modalBackground {
@@ -76,7 +73,6 @@ body {
     background: #fff;
     margin: 0 auto;
     font-size: 30px;
-    /* transform: translateY(-400px); */
     transition: transform .2s ease-in;
 }
 
@@ -131,7 +127,6 @@ body {
 }
 
 .buttonWrapperDiv {
-    /* width: 100vw; */
     height: auto;
     display: flex;
     justify-content: center;
@@ -172,7 +167,6 @@ body {
 }
 
 .backgroundMusicDiv {
-    /* width: 100vw; */
     height: 20vh;
     display: flex;
     justify-content: center;
@@ -221,6 +215,7 @@ body {
     transform: scale(1.5);
     transition: .3s ease;
 }
+
 
 
 /*****************************                                          ***********/
